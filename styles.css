@@ -1,0 +1,103 @@
+body{
+  background-color: #101928;
+}
+
+h1{
+  color: white;
+}
+
+p{
+  color: white;
+}
+
+img{
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+  border-style: solid;
+}
+
+a > img{
+  width: 50px;
+  height: 50px;
+  float: left;
+  margin-left: 76px;
+  border-radius: 30%;
+  border-style: solid;
+  border-width: 3px;
+  padding: 7px;
+  border-color: white;
+}
+
+.titulo{
+  text-align: center;
+  font-size: 40px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right right'
+    'menu footer footer footer footer footer';
+  gap: 10px;
+  background-color: #214545;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.grid-container > div {
+  background-color: #418b8b;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  border-radius: 20px
+} 
+
+.item1 { 
+  grid-area: header;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+}
+
+.item2 { 
+  grid-area: menu; 
+}
+
+.item2 > p {
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+}
+
+.item3 { 
+  grid-area: main;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+}
+.item4 { 
+  grid-area: right;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  color: white;
+}
+
+.item5 { 
+  grid-area: footer;
+  font-size: 30px;
+  font-family:'Courier New', Courier, monospace;
+  color: white; 
+}
+
+.sub-grid {
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: 60px 60px 60px 60px;
+  gap: 50px;
+  background-color: transparent;
+  padding: 1px;
+  text-align: center;
+}
